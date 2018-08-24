@@ -1,0 +1,48 @@
+/*header block*/
+.header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 160px;
+  height: 110px;
+}
+/*navigation block*/
+.navigation {
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigation__link {
+  display: flex;
+  text-decoration: none;
+  padding: 1em;
+  background: #000;
+  color: #fff;
+  font-size: 0.8em;
+  justify-content: center;
+}
+
+.header__navigation #menu {
+  /* stuff */
+}
+
+.header__navigation #menu.open {
+  /* Open stuff */
+}
+
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  background:rgba(0,0,0,0.5);
+  transition: all 0.5s;
+}

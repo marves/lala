@@ -1,0 +1,13 @@
+/*position block*/
+.position {
+  margin: 30px 0;
+
+}
+.position-image {
+  width: 30%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+.position-text {
+
+}

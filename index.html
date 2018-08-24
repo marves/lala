@@ -15,93 +15,113 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main-flex.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/cover.css">
+  <link rel="stylesheet" href="css/position.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/media-query.css">
 </head>
 
 <body>
   <header class="header">
     <img src="img/batman-logo.jpg" class="header__logo"/>
     <nav class="header__navigation" role="navigation" aria="Main Navigation">
-        <a href="#section-1" class="navigation__link">Section 1</a>
-        <a href="#section-2" class="navigation__link">Section 2</a>
-        <a href="#section-3" class="navigation__link">Section 3</a>
-        <a href="#section-4" class="navigation__link">Section 4</a>
+      <div id="menu open">
+        <span id="menu__trigger"></span>
+        <div class="header__navigation menu__items">
+          <a href="#section-1" class="navigation__link">Section 1</a>
+          <a href="#section-2" class="navigation__link">Section 2</a>
+          <a href="#section-3" class="navigation__link">Section 3</a>
+          <a href="#section-4" class="navigation__link">Section 4</a>
+        </div>
+      </div>
     </nav><!--end .header-navigation-->
   </header><!--end .header-->
   <main class="main-content">
     <section id="section-1">
-      <div class="gallery">
-        <!-- <figure>
-          <picture>
-            <img src="img/01.jpg" class="gallery__image"/>
-          </picture>
-          <figcaption>Slika 1</figcaption>
-        </figure> -->
-
-        <div class="gallery__item">
-        <img src="img/01.jpg" class="gallery__image"/>
-        </div>
-        <div class="gallery__item">
-        <img src="img/02.jpg" class="gallery__image"/>
-        </div>
-
-        <div class="gallery__item">
-        <img src="img/03.jpg" class="gallery__image"/>
-        </div>
-        <div class="gallery__item">
-        <img src="img/04.jpg" class="gallery__image"/>
-        </div>
-        <div class="gallery__item">
-        <img src="img/05.jpg" class="gallery__image"/>
-        </div>
-
-        <div class="gallery__item">
-        <img src="img/06.jpg" class="gallery__image"/>
-        </div>
+      <div class="card card--gallery">
+        <figure class="deck">
+          <img src="img/01.jpg" class="deck__image"/>
+          <figcaption class="deck__title">Image 1</figcaption>
+        </figure>
+        <figure class="deck">
+          <img src="img/02.jpg" class="deck__image"/>
+          <figcaption class="deck__title">Image 2</figcaption>
+        </figure>
+        <figure class="deck">
+          <img src="img/03.jpg" class="deck__image"/>
+          <figcaption class="deck__title">Image 3</figcaption>
+        </figure>
+        <figure class="deck">
+          <img src="img/04.jpg" class="deck__image"/>
+          <figcaption class="deck__title">Image 4</figcaption>
+        </figure>
+        <figure class="deck">
+          <img src="img/05.jpeg" class="deck__image"/>
+          <figcaption class="deck__title">Image 5</figcaption>
+        </figure>
+        <figure class="deck">
+          <img src="img/06.jpg" class="deck__image"/>
+          <figcaption class="deck__title">Image 6</figcaption>
+        </figure>
       </div>
-    </section><!--end .gallery-article-->
+    </section><!--end .section-1-->
     <section id="section-2">
-        <h2 class="section-2__title">Title</h2>
+      <div class="cover">
+        <div class="cover-text">
+          <h2 class="section-2__title">Title</h2>
           <p class="section-2__article">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-    </section><!--end .paragraph-article-->
+        </div>
+      </div>
+    </section><!--end .section-2-->
     <section id="section-3">
-      <div class="info-button">
-        <img src="img/08.jpg" class="info-button__image"/>
-        <p class="info-button__info">Info</p>
+      <div class="card card--gallery card--gallery__media">
+        <div class="deck">
+          <img src="img/08.jpg" class="deck__image"/>
+          <p class="deck__title--relative">Info</p>
+        </div>
+        <div class="deck">
+          <img src="img/09.jpg" class="deck__image"/>
+          <p class="deck__title--relative">Info</p>
+        </div>
+        <div class="deck">
+          <img src="img/10.jpg" class="deck__image"/>
+          <p class="deck__title--relative">Info</p>
+        </div>
       </div>
-      <div class="info-button">
-        <img src="img/09.jpg" class="info-button__image"/>
-        <p>Info</p>
-      </div>
-      <div class="info-button">
-        <img src="img/10.jpg" class="info-button__image"/>
-        <p>Info</p>
-      </div>
-    </section><!--end .gallery-article-->
+    </section><!--end .section-3-->
     <section id="section-4">
-      <img src="img/07.jpeg" class="gallery__image"/>
-      <p class="section-4__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Ut faucibus scelerisque aliquet. Etiam pellentesque nunc
-            sollicitudin nulla dapibus, sed semper orci pharetra.
-            Proin at diam cursus, tristique turpis semper, accumsan
-            enim.
+      <div class="position">
+      <img src="img/07.jpeg" class="position-image"/>
+      <p class="position-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed justo vitae enim tincidunt mollis nec a ante. Aliquam mattis quis erat non aliquet. Donec sit amet mollis mi, at interdum est. Nunc laoreet venenatis velit, a molestie nibh. Duis lorem ante, congue id nisi in, feugiat tempor dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum quis volutpat est.
+
+        Curabitur pellentesque lacinia arcu id ultrices. Praesent sed turpis in quam accumsan dictum. Praesent ultricies mi ac urna elementum congue. Duis congue ligula nec convallis varius. Morbi molestie urna eget neque condimentum egestas non ac sem. Donec et magna commodo, maximus dolor quis, mattis arcu. Donec ultrices, erat eget fringilla scelerisque, nibh felis elementum massa, eget volutpat quam massa sollicitudin est. Vestibulum lobortis maximus felis. Sed rutrum urna sed dolor lobortis, a tempor nulla tempor. Phasellus tellus lectus, sodales sit amet viverra a, consectetur vel enim. Integer vulputate ante in odio semper, vitae luctus arcu consequat. In hac habitasse platea dictumst. Praesent egestas aliquam molestie. Maecenas non libero vel augue pharetra pharetra sed consequat diam. Nullam vitae justo velit. Pellentesque in lacus est.
+
+        Integer nibh eros, gravida ac lorem id, fermentum maximus lacus. Donec lacinia condimentum odio. Aliquam convallis nulla vel justo dapibus condimentum. Vivamus lorem metus, fermentum eu condimentum eu, ornare ac augue. Donec a fermentum lectus. Pellentesque eget justo eleifend enim suscipit venenatis. In hac habitasse platea dictumst. Duis leo urna, pharetra sed metus quis, luctus finibus ante. Praesent in lacus elit. Aenean bibendum leo sed neque pharetra, at volutpat purus luctus. Praesent convallis porttitor nulla eget vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ut pretium dolor. Nullam at massa in enim semper rhoncus.
+
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ac nibh ac enim commodo elementum. Morbi pretium, arcu et efficitur gravida, dolor nibh gravida nibh, id ultrices diam nibh ut purus. Quisque aliquet vulputate magna, sit amet ullamcorper sapien eleifend vestibulum. Phasellus sit amet elementum tortor. Ut condimentum vehicula purus. Sed purus turpis, efficitur non lorem a, varius lobortis arcu. Nulla ut augue et urna euismod luctus. Integer sagittis enim at lobortis sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut sem libero, laoreet ut metus id, euismod tincidunt dolor. Mauris eget odio sit amet est dapibus faucibus. Nam ut enim congue, dignissim nulla vel, consequat velit. Aenean sed neque elementum, suscipit felis vel, sagittis sapien. Donec tincidunt ac neque sed pellentesque.
+
+        Maecenas tincidunt leo dolor, eu sagittis mi ultrices pretium. Vivamus vitae mi tortor. Ut dignissim blandit malesuada. Etiam non mi rhoncus, rutrum tortor in, aliquam felis. Etiam quis quam sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc elementum sapien et eros lacinia, at venenatis lorem convallis. Phasellus elementum vulputate magna id bibendum. Morbi lacinia mattis orci sit amet faucibus. Fusce cursus posuere libero, quis dignissim odio. Phasellus at hendrerit ligula. Morbi faucibus sem ac eros convallis, in varius sapien hendrerit.
       </p>
-    </section><!--end .paragraph-article-->
+    </div>
+    </section><!--end .section-4-->
   </main>
   <footer class="footer">
-    <ul class="navigation navigation--footer">
-      <li href="#" class="navigation__link">Category 1</li>
-      <li href="#" class="navigation__link">Category 2</li>
-      <li href="#" class="navigation__link">Category 3</li>
-      <li href="#" class="navigation__link">Category 4</li>
+    <ul class="navigation--footer">
+      <li href="#" class="navigation__link--footer">Category 1</li>
+      <li href="#" class="navigation__link--footer">Category 2</li>
+      <li href="#" class="navigation__link--footer">Category 3</li>
+      <li href="#" class="navigation__link--footer">Category 4</li>
     </ul><!--end .footer-navigation-->
-    <ul class="navigation navigation--footer">
-      <li href="#" class="navigation__link">Category 1</li>
-      <li href="#" class="navigation__link">Category 2</li>
-      <li href="#" class="navigation__link">Category 3</li>
-      <li href="#" class="navigation__link">Category 4</li>
+    <ul class="navigation--footer">
+      <li href="#" class="navigation__link--footer">Category 1</li>
+      <li href="#" class="navigation__link--footer">Category 2</li>
+      <li href="#" class="navigation__link--footer">Category 3</li>
+      <li href="#" class="navigation__link--footer">Category 4</li>
     </ul><!--end .footer-navigation-->
   </footer><!--end .footer-->
 
